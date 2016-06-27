@@ -1,6 +1,6 @@
 {
   "name": "SNOMED in 5 minutes",
   "tagline": "An example demo project for developers to see how to interact with SNOMED CT",
-  "body": "## SNOMED In 5 Minutes\r\nAn example demo project for developers to see how to interact with SNOMED CT\r\n\r\n# Resources\r\n- IHTSDO SNOMED CT browser: http://browser.ihtsdotools.org\r\n- SNOMED CT Snapshot REST API: https://github.com/IHTSDO/sct-snapshot-rest-api (REST documentation here http://docs.snomedctsnapshotapi.apiary.io/)\r\n",
+  "body": "## SNOMED In 5 Minutes\r\nAn example demo project for developers to see how to interact with SNOMED CT\r\n\r\n## Resources\r\n- IHTSDO SNOMED CT browser: http://browser.ihtsdotools.org\r\n- SNOMED CT Snapshot REST API: https://github.com/IHTSDO/sct-snapshot-rest-api (REST documentation here http://docs.snomedctsnapshotapi.apiary.io/)\r\n\r\n## Contributors\r\n- IHTSDO\r\n- tbc\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
