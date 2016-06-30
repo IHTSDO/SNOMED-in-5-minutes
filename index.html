@@ -23,21 +23,79 @@
         </header>
 
         <section id="downloads" class="clearfix">
-          <a href="https://github.com/IHTSDO/snomedin5minutes/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/IHTSDO/snomedin5minutes/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/IHTSDO/snomedin5minutes" id="view-on-github" class="button"><span>View on GitHub</span></a>
+          <a href="https://github.com/IHTSDO/SNOMED-in-5-minutes/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/IHTSDO/SNOMED-in-5-minutes/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/IHTSDO/SNOMED-in-5-minutes" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section>
 
         <hr>
 
         <section id="main_content">
-          <h2>
-<a id="snomed-in-5-minutes" class="anchor" href="#snomed-in-5-minutes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SNOMED In 5 Minutes</h2>
+          <h1>
+<a id="snomed-in-5-minutes" class="anchor" href="#snomed-in-5-minutes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SNOMED In 5 Minutes</h1>
 
-<p>An example demo project for developers to see how to interact with SNOMED CT</p>
+<p>This is an easy-to-use tutorial for accessing SNOMED APIs within 5 min.</p>
 
-<h2>
-<a id="resources" class="anchor" href="#resources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Resources</h2>
+<h1>
+<a id="project-structure" class="anchor" href="#project-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Structure</h1>
+
+<ul>
+<li>
+<p>top-level: aggregator for sub-modules (alphabetically):</p>
+
+<ul>
+<li>curl-examples: examples with curl</li>
+<li>java-examples: examples with java</li>
+<li>javascript-examples: examples with javascript</li>
+<li>model: JAXB-enabled classes for representing the RF2 domain model</li>
+<li>rest-client: a Java client for the REST services</li>
+</ul>
+</li>
+</ul>
+
+<h1>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Examples</h1>
+
+<p>The following examples will be used to demonstrate accessing the SNOMED API through Javascript, Curl, and Java (using Jersey).</p>
+
+<ul>
+<li>Find a concept by a string (e.g. "heart attack")</li>
+<li>Find/get a concept by a description SCTID (e.g. "679406011")</li>
+<li>Find/get a concept by a concept SCTID (e.g. "109152007")</li>
+<li>Find a concept by a string (e.g. "heart") but only in the Procedures semantic tag</li>
+</ul>
+
+<p>All of the examples use a hard coded URL, edition name, and version number which point to a server hosted by IHTSDO (<a href="http://www.ihtsdo.org">www.ihtsdo.org</a>). These are the APIs that back the IHTSDO browser (<a href="http://browser.ihtsdotools.org">http://browser.ihtsdotools.org</a>)</p>
+
+<ul>
+<li>baseUrl = <a href="http://browser.ihtsdotools.org/api/snomed/">http://browser.ihtsdotools.org/api/snomed/</a>
+</li>
+<li>edition = en-edition</li>
+<li>version = 20160131</li>
+</ul>
+
+<h1>
+<a id="java" class="anchor" href="#java" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Java</h1>
+
+<p><a href="../master/java-examples/java-examples.md" title="Java Examples">Click for Java examples.</a></p>
+
+<h1>
+<a id="javascript" class="anchor" href="#javascript" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Javascript</h1>
+
+<p><a href="../master/javascript-examples/javascript-examples.md" title="JavaScript Examples">Click for JavaScript examples.</a></p>
+
+<h1>
+<a id="curl" class="anchor" href="#curl" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Curl</h1>
+
+<p><a href="../master/curl-examples/curl-examples.md" title="Curl Examples">Click for Curl examples.</a></p>
+
+<h1>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Documentation</h1>
+
+<p>Find comprehensive documentation here: TBD</p>
+
+<h1>
+<a id="resources" class="anchor" href="#resources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Resources</h1>
 
 <ul>
 <li>IHTSDO SNOMED CT browser: <a href="http://browser.ihtsdotools.org">http://browser.ihtsdotools.org</a>
@@ -45,13 +103,18 @@
 <li>SNOMED CT Snapshot REST API: <a href="https://github.com/IHTSDO/sct-snapshot-rest-api">https://github.com/IHTSDO/sct-snapshot-rest-api</a> (REST documentation here <a href="http://docs.snomedctsnapshotapi.apiary.io/">http://docs.snomedctsnapshotapi.apiary.io/</a>)</li>
 </ul>
 
-<h2>
-<a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributors</h2>
+<h1>
+<a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributors</h1>
 
 <ul>
 <li>IHTSDO</li>
 <li>tbc</li>
 </ul>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
+
+<p>See the included LICENSE.txt file.</p>
         </section>
 
         <footer>
