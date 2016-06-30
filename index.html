@@ -3,41 +3,49 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
     <title>SNOMED in 5 minutes by IHTSDO</title>
   </head>
 
   <body>
-    <div id="container">
+    <header>
       <div class="inner">
+        <h1>SNOMED in 5 minutes</h1>
+        <h2>An example demo project for developers to see how to interact with SNOMED CT</h2>
+        <a href="https://github.com/IHTSDO/SNOMED-in-5-minutes" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
 
-        <header>
-          <h1>SNOMED in 5 minutes</h1>
-          <h2>An example demo project for developers to see how to interact with SNOMED CT</h2>
-        </header>
-
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/IHTSDO/SNOMED-in-5-minutes/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/IHTSDO/SNOMED-in-5-minutes/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/IHTSDO/SNOMED-in-5-minutes" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <hr>
-
-        <section id="main_content">
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
           <h1>
 <a id="snomed-in-5-minutes" class="anchor" href="#snomed-in-5-minutes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SNOMED In 5 Minutes</h1>
 
 <p>This is an easy-to-use tutorial for accessing SNOMED APIs within 5 min.</p>
 
-<h1>
-<a id="project-structure" class="anchor" href="#project-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Structure</h1>
+<h2>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of Contents</h2>
+
+<ol>
+<li><a href="#project-structure">Project Structure</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#license">License</a></li>
+</ol>
+
+<h2>
+<a id="project-structure" class="anchor" href="#project-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Structure</h2>
 
 <ul>
 <li>
@@ -53,8 +61,8 @@
 </li>
 </ul>
 
-<h1>
-<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Examples</h1>
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Examples</h2>
 
 <p>The following examples will be used to demonstrate accessing the SNOMED API through Javascript, Curl, and Java (using Jersey).</p>
 
@@ -74,28 +82,32 @@
 <li>version = 20160131</li>
 </ul>
 
-<h1>
-<a id="java" class="anchor" href="#java" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Java</h1>
+<p><strong><a href="#table-of-contents">Back to top</a></strong></p>
+
+<h3>
+<a id="java" class="anchor" href="#java" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Java</h3>
 
 <p><a href="../master/java-examples/java-examples.md" title="Java Examples">Click for Java examples.</a></p>
 
-<h1>
-<a id="javascript" class="anchor" href="#javascript" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Javascript</h1>
+<h3>
+<a id="javascript" class="anchor" href="#javascript" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Javascript</h3>
 
 <p><a href="../master/javascript-examples/javascript-examples.md" title="JavaScript Examples">Click for JavaScript examples.</a></p>
 
-<h1>
-<a id="curl" class="anchor" href="#curl" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Curl</h1>
+<h3>
+<a id="curl" class="anchor" href="#curl" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Curl</h3>
 
 <p><a href="../master/curl-examples/curl-examples.md" title="Curl Examples">Click for Curl examples.</a></p>
 
-<h1>
-<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Documentation</h1>
+<p><strong><a href="#table-of-contents">Back to top</a></strong></p>
+
+<h2>
+<a id="further-documentation" class="anchor" href="#further-documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Further Documentation</h2>
 
 <p>Find comprehensive documentation here: TBD</p>
 
-<h1>
-<a id="resources" class="anchor" href="#resources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Resources</h1>
+<h2>
+<a id="resources" class="anchor" href="#resources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Resources</h2>
 
 <ul>
 <li>IHTSDO SNOMED CT browser: <a href="http://browser.ihtsdotools.org">http://browser.ihtsdotools.org</a>
@@ -103,27 +115,60 @@
 <li>SNOMED CT Snapshot REST API: <a href="https://github.com/IHTSDO/sct-snapshot-rest-api">https://github.com/IHTSDO/sct-snapshot-rest-api</a> (REST documentation here <a href="http://docs.snomedctsnapshotapi.apiary.io/">http://docs.snomedctsnapshotapi.apiary.io/</a>)</li>
 </ul>
 
-<h1>
-<a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributors</h1>
+<p><strong><a href="#table-of-contents">Back to top</a></strong></p>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it!</li>
+<li>Create your feature branch: <code>git checkout -b my-new-feature</code>
+</li>
+<li>Commit your changes: <code>git commit -am 'Add some feature'</code>
+</li>
+<li>Push to the branch: <code>git push origin my-new-feature</code>
+</li>
+<li>Submit a pull request :D</li>
+</ol>
+
+<p><strong><a href="#table-of-contents">Back to top</a></strong></p>
+
+<h3>
+<a id="current-contributors" class="anchor" href="#current-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Current Contributors</h3>
 
 <ul>
-<li>IHTSDO</li>
-<li>tbc</li>
+<li><a href="https://github.com/westcoastinformatics">West Coast Informatics</a></li>
+<li><p><a href="https://github.com/termMed">TermMed</a></p></li>
+<li><p><a href="https://github.com/IHTSDO/SNOMED-in-5-minutes/graphs/contributors">Other Contributors</a></p></li>
 </ul>
 
-<h1>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
+<p><strong><a href="#table-of-contents">Back to top</a></strong></p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
 
 <p>See the included LICENSE.txt file.</p>
+
+<p><strong><a href="#table-of-contents">Back to top</a></strong></p>
         </section>
 
-        <footer>
-          SNOMED in 5 minutes is maintained by <a href="https://github.com/IHTSDO">IHTSDO</a><br>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
+        <aside id="sidebar">
+          <a href="https://github.com/IHTSDO/SNOMED-in-5-minutes/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/IHTSDO/SNOMED-in-5-minutes/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
 
-        
+          <p class="repo-owner"><a href="https://github.com/IHTSDO/SNOMED-in-5-minutes"></a> is maintained by <a href="https://github.com/IHTSDO">IHTSDO</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
       </div>
     </div>
+
+  
   </body>
 </html>
