@@ -1,0 +1,185 @@
+<html ng-app="myApp">
+<head>
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snomed in 5 Minutes - JavaScript Examples</title>
+<style type="text/css" media="all"></style>
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favicon.png" />
+
+<!-- Bootstrap CSS  -->
+<link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- Angular core and standard plugins -->
+<script type="text/javascript"
+  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+
+<!-- Angular/Boostrap UI -->
+<script type="text/javascript"
+  src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.3.3.js"></script>
+
+<!-- Angular application -->
+<script src="app.js"></script>
+
+<style>
+.pre-xy-scrollable {
+	overflow: auto;
+	-ms-word-wrap: normal;
+	word-wrap: normal;
+	overflow-wrap: normal;
+	white-space: pre;
+	max-height: 400px;
+	max-width: 600px;
+}
+</style>
+</head>
+<body>
+  <!--  Javascript detection -->
+  <noscript>
+    <div class="alert alert-danger">You must have Javascript enabled to
+      use this sample website</div>
+  </noscript>
+  <div class="container-fluid" ng-controller="SimpleCtrl">
+
+    <h4 ng-show="errorMsg" class="alert alert-danger alert-error">
+      {{errorMsg}}
+      <span style="display: inline; float: right;">
+        <i class="glyphicon glyphicon-remove" ng-click="clearError()"></i>
+      </span>
+    </h4>
+
+    <h3>Snomed in 5 Minutes - Javascript Examples</h3>
+    <p>This tool provides a simple interface for performing the basic search
+      examples covered by this tutorial.</p>
+
+    <div class="row">
+
+      <!-- Make a spacer -->
+      <div class="col-md-1 col-xs-0"></div>
+      <div class="col-md-10 col-xs-12>">
+        <br />
+        <table class="table">
+          <tr>
+            <th class="col-md-12 col-xs-12">Perform Search</th>
+          </tr>
+
+          <!-- Find by query -->
+          <tr>
+            <td style="vertical-align: top">
+              <form>
+                <input autofocus ng-model="query1"
+                  placeholder="e.g. heart attack" /> &nbsp;
+                <button type="submit" class="btn btn-sm btn-primary"
+                  ng-click="findByQuery(query1)">Find By Query</button>
+                &nbsp;
+                <button ng-show="findByQueryUrl" class="btn btn-sm btn-warning"
+                  ng-click="clear()">Clear</button>
+              </form>
+              <br />
+              <div ng-show="findByQueryUrl">
+                <div>URL:</div>
+                <pre class="pre-xy-scrollable" ng-bind="findByQueryUrl"></pre>
+              </div>
+              <div ng-show="findByQueryResult">
+                <div>JSON Result ({{findByQueryCt}}):</div>
+                <pre class="pre-xy-scrollable"
+                  style="background-color: lightgray"
+                  ng-bind="findByQueryResult"></pre>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Find by description id -->
+          <tr>
+            <td style="vertical-align: top">
+              <form>
+                <input ng-model="query2" placeholder="e.g. 679406011" /> &nbsp;
+                <button type="submit" class="btn btn-sm btn-primary"
+                  ng-click="findByDescriptionId(query2)">Find By
+                  Description Id</button>
+                &nbsp;
+                <button ng-show="findByDescriptionIdUrl"
+                  class="btn btn-sm btn-warning" ng-click="clear()">Clear</button>
+              </form>
+              <br />
+              <div ng-show="findByDescriptionIdUrl">
+                <div>URL:</div>
+                <pre class="pre-xy-scrollable" ng-bind="findByDescriptionIdUrl"></pre>
+              </div>
+              <div ng-show="findByDescriptionIdResult">
+                <div>JSON Result ({{findByDescriptionIdCt}}):</div>
+                <pre class="pre-xy-scrollable"
+                  style="background-color: lightgray"
+                  ng-bind="findByDescriptionIdResult"></pre>
+              </div>
+            </td>
+          </tr>
+
+
+          <!-- Find by concept id -->
+          <tr>
+            <td style="vertical-align: top">
+              <form>
+                <input ng-model="query3" placeholder="e.g. 109152007" /> &nbsp;
+                <button type="submit" class="btn btn-sm btn-primary"
+                  ng-click="findByConceptId(query3)">Find By Concept Id</button>
+                &nbsp;
+                <button ng-show="findByConceptIdUrl"
+                  class="btn btn-sm btn-warning" ng-click="clear()">Clear</button>
+              </form>
+              <br />
+              <div ng-show="findByConceptIdUrl">
+                <div>URL:</div>
+                <pre class="pre-xy-scrollable" ng-bind="findByConceptIdUrl"></pre>
+              </div>
+              <div ng-show="findByConceptIdResult">
+                <div>JSON Result: ({{findByConceptIdCt}})</div>
+                <pre class="pre-xy-scrollable"
+                  style="background-color: lightgray"
+                  ng-bind="findByConceptIdResult"></pre>
+              </div>
+            </td>
+          </tr>
+
+
+          <!-- Find by query with filter -->
+          <tr>
+            <td style="vertical-align: top">
+              <form>
+                <input ng-model="query4" placeholder="e.g. heart" /> &nbsp; <input
+                  ng-model="query5" placeholder="e.g. procedure" /> &nbsp;
+                <button type="submit" class="btn btn-sm btn-primary"
+                  ng-click="findByQueryWithFilter(query4,query5)">Find
+                  By Query With Fitler</button>
+                &nbsp;
+                <button ng-show="findByQueryWithFilterUrl"
+                  class="btn btn-sm btn-warning" ng-click="clear()">Clear</button>
+              </form>
+              <br />
+              <div ng-show="findByQueryWithFilterUrl">
+                <div>URL:</div>
+                <pre class="pre-xy-scrollable"
+                  ng-bind="findByQueryWithFilterUrl"></pre>
+              </div>
+              <div ng-show="findByQueryWithFilterResult">
+                <div>JSON Result: ({{findByQueryWithFilterCt}})</div>
+                <pre class="pre-xy-scrollable"
+                  style="background-color: lightgray"
+                  ng-bind="findByQueryWithFilterResult"></pre>
+              </div>
+            </td>
+          </tr>
+
+        </table>
+      </div>
+      <!-- Make a spacer -->
+      <div class="col-md-1 col-xs-0"></div>
+    </div>
+
+  </div>
+
+
+</body>
+</html>
