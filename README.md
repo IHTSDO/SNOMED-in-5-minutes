@@ -39,15 +39,19 @@ All of the examples use a hard coded URL, edition name, and version number which
 
 ### Java
 
-[Click for Java examples.](../master/java-examples/ "Java Examples")
+- [Click for Java examples.](../master/java-examples/ "Java Examples")
 
 ### Javascript
 
-[Click for JavaScript examples.](../master/javascript-examples/ "JavaScript Examples")
+- [Click for JavaScript examples.](../master/javascript-examples/ "JavaScript Examples")
 
 ### Curl
 
-[Click for Curl examples.](../master/curl-examples/ "Curl Examples")
+- [Click for Curl examples.](../master/curl-examples/ "Curl Examples")
+
+### Coming Soon
+
+- .Net
 
 **[Back to top](#table-of-contents)**
 
@@ -68,15 +72,15 @@ Find comprehensive documentation here: TBD
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+5. Submit a pull request
 
 **[Back to top](#table-of-contents)**
 
 ### Current Contributors
 
-- [West Coast Informatics](https://github.com/westcoastinformatics)
-- [TermMed](https://github.com/termMed)
-
+- [Brian Carlsen](https://github.com/bcarlsenca)
+- [Alejandro Lopez Osornio](https://github.com/alopezo)
+- [Jesse Efron](https://github.com/yishaiil)
 - [Other Contributors](https://github.com/IHTSDO/SNOMED-in-5-minutes/graphs/contributors)
 
 **[Back to top](#table-of-contents)**
