@@ -39,15 +39,15 @@ All of the examples use a hard coded URL, edition name, and version number which
 
 ### Java
 
-[Click for Java examples.](../master/java-examples/java-examples.md "Java Examples")
+[Click for Java examples.](../master/java-examples/ "Java Examples")
 
 ### Javascript
 
-[Click for JavaScript examples.](../master/javascript-examples/javascript-examples.md "JavaScript Examples")
+[Click for JavaScript examples.](../master/javascript-examples/ "JavaScript Examples")
 
 ### Curl
 
-[Click for Curl examples.](../master/curl-examples/curl-examples.md "Curl Examples")
+[Click for Curl examples.](../master/curl-examples/ "Curl Examples")
 
 **[Back to top](#table-of-contents)**
 
