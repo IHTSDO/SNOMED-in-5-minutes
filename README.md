@@ -81,6 +81,7 @@ Find comprehensive documentation here: TBD
 - [Brian Carlsen](https://github.com/bcarlsenca)
 - [Alejandro Lopez Osornio](https://github.com/alopezo)
 - [Jesse Efron](https://github.com/yishaiil)
+- [Philip Wilford](https://github.com/brisbaneuk)
 - [Other Contributors](https://github.com/IHTSDO/SNOMED-in-5-minutes/graphs/contributors)
 
 **[Back to top](#table-of-contents)**
