@@ -28,8 +28,6 @@ The client has two defined classes for the returned data:
 
 The 'Searching by query' and 'Searching my description id' return the SnomedSearch model, while the 'Searching my concept id' returns the SnomedConcept model.
 
-
-
 There is a rest-client-csharp/SnomedClient/bin/Debug/RunExamples.cmd file which will run all the below queries for you:
 
 * SnomedClient.exe findByQuery "heart attack"
@@ -48,7 +46,7 @@ Sample calls
   - findByQueryWithFilter "heart" "procedure"
 ```
 
-To see the raw JSON response itself, you will need to edit the SnomedClient.cs and enable th debug option, and set the output directory.
+To see the raw JSON response itself, you will need to edit the SnomedClient.cs and enable the debug option, and set the output directory.
 
 ```
         // Just for debugging, set to true to capture responses
