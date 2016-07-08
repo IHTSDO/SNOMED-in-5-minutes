@@ -14,11 +14,13 @@ This is an easy-to-use tutorial for accessing SNOMED APIs within 5 min.
 
 - top-level: aggregator for sub-modules (alphabetically):
 
+  - csharp-examples: examples with csharp (.net)
   - curl-examples: examples with curl
   - java-examples: examples with java
   - javascript-examples: examples with javascript
   - model: JAXB-enabled classes for representing the RF2 domain model
   - rest-client: a Java client for the REST services
+  - rest-client-csharp: a CSharp client for the REST services
 
 ## Examples
 
@@ -37,6 +39,14 @@ All of the examples use a hard coded URL, edition name, and version number which
 
 **[Back to top](#table-of-contents)**
 
+### CSharp (.net)
+
+- [Click for Csharp examples.](../csharp/csharp-examples/ "CSharp Examples")
+
+### Curl
+
+- [Click for Curl examples.](../master/curl-examples/ "Curl Examples")
+
 ### Java
 
 - [Click for Java examples.](../master/java-examples/ "Java Examples")
@@ -44,14 +54,6 @@ All of the examples use a hard coded URL, edition name, and version number which
 ### Javascript
 
 - [Click for JavaScript examples.](../master/javascript-examples/ "JavaScript Examples")
-
-### Curl
-
-- [Click for Curl examples.](../master/curl-examples/ "Curl Examples")
-
-### Coming Soon
-
-- .Net
 
 **[Back to top](#table-of-contents)**
 
@@ -81,6 +83,7 @@ Find comprehensive documentation here: TBD
 - [Brian Carlsen](https://github.com/bcarlsenca)
 - [Alejandro Lopez Osornio](https://github.com/alopezo)
 - [Jesse Efron](https://github.com/yishaiil)
+- [Philip Wilford] (https://github.com/philipwilford)
 - [Other Contributors](https://github.com/IHTSDO/SNOMED-in-5-minutes/graphs/contributors)
 
 **[Back to top](#table-of-contents)**

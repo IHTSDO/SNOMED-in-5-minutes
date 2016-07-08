@@ -43,7 +43,18 @@ namespace SnomedClient
         /// <returns>Returns description matches for the specified query</returns>
         public SnomedSearch findByQuery(string query)
         {
-            return _findByQuery(query, "", "", "",  0, 25, "");
+            return _findByQuery(query, "", "", "",  0, 25, "", "");
+        }
+
+        /// <summary>
+        /// Simple  query
+        /// </summary>
+        /// <param name="query">the query</param>
+        /// <param name="semanticFilter">whether to apply a semantic filter to the search term</param>
+        /// <returns>Returns description matches for the specified query</returns>
+        public SnomedSearch findByQuery(string query, string semanticFilter)
+        {
+            return _findByQuery(query, "", "", "", 0, 25, "", semanticFilter);
         }
 
         /// <summary>
@@ -55,7 +66,19 @@ namespace SnomedClient
         /// <returns>Returns description matches for the specified query</returns>
         public SnomedSearch findByQuery(string query, int skipTo, int returnLimit)
         {
-            return _findByQuery(query, "", "", "", skipTo, returnLimit, "");
+            return _findByQuery(query, "", "", "", skipTo, returnLimit, "", "");
+        }
+
+        /// <summary>
+        /// Simple  query with some params
+        /// </summary>
+        /// <param name="query">the query</param>
+        /// <param name="skipTo">skip to value</param>
+        /// <param name="returnLimit">the return limit</param>
+        /// <returns>Returns description matches for the specified query</returns>
+        public SnomedSearch findByQuery(string query, int skipTo, int returnLimit, string semanticFilter)
+        {
+            return _findByQuery(query, "", "", "", skipTo, returnLimit, "", semanticFilter);
         }
 
         /// <summary>
@@ -68,16 +91,17 @@ namespace SnomedClient
         /// <param name="skipTo">skip to value</param>
         /// <param name="returnLimit">the return limit</param>
         /// <param name="normalize">whether to normalise the search term</param>
+        /// <param name="semanticFilter">whether to apply a semantic filter to the search term</param>
         /// <returns>Returns description matches for the specified query</returns>
-        public SnomedSearch findByQuery(string query, string searchMode, string lang, string statusFilter, int skipTo, int returnLimit, string normalize)
+        public SnomedSearch findByQuery(string query, string searchMode, string lang, string statusFilter, int skipTo, int returnLimit, string normalize, string semanticFilter)
         {
-            return _findByQuery(query, searchMode, lang, statusFilter, skipTo, returnLimit, normalize);
+            return _findByQuery(query, searchMode, lang, statusFilter, skipTo, returnLimit, normalize, semanticFilter);
         }
 
         /// <summary>
         /// The internal query
         /// </summary>
-        private SnomedSearch _findByQuery(string query, string searchMode, string lang, string statusFilter, int skipTo, int returnLimit, string normalize)
+        private SnomedSearch _findByQuery(string query, string searchMode, string lang, string statusFilter, int skipTo, int returnLimit, string normalize, string semanticFilter)
         {
             RestClient restClient = new RestClient(_endpoint);
 
@@ -85,9 +109,11 @@ namespace SnomedClient
             if (string.IsNullOrEmpty(lang)) lang = "english";
             if (string.IsNullOrEmpty(statusFilter)) statusFilter = "activeOnly";
             if (string.IsNullOrEmpty(normalize)) normalize = "true";
+            if (string.IsNullOrEmpty(semanticFilter)) semanticFilter = "";
 
             // UrlEncode query but make '+' back to a space (.net turns '+' into %2B which stops it working)
             query = HttpUtility.UrlEncode(query, Encoding.UTF8).Replace("+", " ");
+            semanticFilter = HttpUtility.UrlEncode(semanticFilter, Encoding.UTF8).Replace("+", " ");
 
             var request = new RestRequest("descriptions", Method.GET);
             request.AddHeader("Content-Type", "text/html");
@@ -98,6 +124,7 @@ namespace SnomedClient
             request.AddParameter("skipTo", skipTo);
             request.AddParameter("returnLimit", returnLimit);
             request.AddParameter("normalize", normalize);
+            if (!string.IsNullOrEmpty(semanticFilter)) request.AddParameter("semanticFilter", semanticFilter);
 
             try
             {
