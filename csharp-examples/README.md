@@ -120,11 +120,11 @@ SnomedClient.exe findByQueryWithFilter "heart" "procedure"
 This call writes some output to the console:
 
 ```
-sing URL                 : http://browser.ihtsdotools.org/api/snomed
-dition                   : en-edition
-elease                   : 20160131
+Using URL                 : http://browser.ihtsdotools.org/api/snomed
+Edition                   : en-edition
+Release                   : 20160131
 
-earching for text        : heart
-ith filter               : procedure
-otal entries returned    : 746
+Searching for text        : heart
+With filter               : procedure
+Total entries returned    : 746
 ``` 
