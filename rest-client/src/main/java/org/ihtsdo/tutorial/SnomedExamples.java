@@ -104,7 +104,7 @@ public class SnomedExamples {
         System.out.println("  - findByQuery \"heart attack\"");
         System.out.println("  - findByDescriptionId 679406011");
         System.out.println("  - findByConceptId 109152007");
-        System.out.println("  - findByQuery \"heart\" \"procedure\"");
+        System.out.println("  - findByQueryWithFilter \"heart\" \"procedure\"");
         System.exit(1);
       }
 
