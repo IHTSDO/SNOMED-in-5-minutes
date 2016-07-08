@@ -24,7 +24,7 @@ This is an easy-to-use tutorial for accessing SNOMED APIs within 5 min.
 
 ## Examples
 
-The following examples will be used to demonstrate accessing the SNOMED API through Javascript, Curl, and Java (using Jersey).
+The following examples will be used to demonstrate accessing the SNOMED API through CSharp, Javascript, Curl, and Java (using Jersey).
 
 - Find a concept by a string (e.g. "heart attack")
 - Find/get a concept by a description SCTID (e.g. "679406011")
@@ -41,11 +41,7 @@ All of the examples use a hard coded URL, edition name, and version number which
 
 ### CSharp (.net)
 
-- [Click for Csharp examples.](../csharp/csharp-examples/ "CSharp Examples")
-
-### Curl
-
-- [Click for Curl examples.](../master/curl-examples/ "Curl Examples")
+- [Click for CSharp examples.](../csharp/csharp-examples/ "CSharp Examples")
 
 ### Java
 
@@ -54,6 +50,10 @@ All of the examples use a hard coded URL, edition name, and version number which
 ### Javascript
 
 - [Click for JavaScript examples.](../master/javascript-examples/ "JavaScript Examples")
+
+### Curl
+
+- [Click for Curl examples.](../master/curl-examples/ "Curl Examples")
 
 **[Back to top](#table-of-contents)**
 
@@ -83,7 +83,7 @@ Find comprehensive documentation here: TBD
 - [Brian Carlsen](https://github.com/bcarlsenca)
 - [Alejandro Lopez Osornio](https://github.com/alopezo)
 - [Jesse Efron](https://github.com/yishaiil)
-- [Philip Wilford] (https://github.com/philipwilford)
+- [Philip Wilford](https://github.com/philipwilford)
 - [Other Contributors](https://github.com/IHTSDO/SNOMED-in-5-minutes/graphs/contributors)
 
 **[Back to top](#table-of-contents)**
