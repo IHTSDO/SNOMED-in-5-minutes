@@ -78,7 +78,7 @@ Find comprehensive documentation here: TBD
 
 **[Back to top](#table-of-contents)**
 
-### Current Contributors
+## Current Contributors
 
 - [Brian Carlsen](https://github.com/bcarlsenca)
 - [Alejandro Lopez Osornio](https://github.com/alopezo)
@@ -93,3 +93,8 @@ Find comprehensive documentation here: TBD
 See the included LICENSE.txt file.
 
 **[Back to top](#table-of-contents)**
+
+## Suggestions for Future Work
+- 'supporting registration for a British GP' (i.e. searching within the GP/FP reference set & the UK language reference set)
+- 'deriving ICD-10 codes from registered SNOMED concepts (i.e. retrieving all entries of a SNOMED-concept from the ICD-10 extended mapping reference set)
+
