@@ -32,11 +32,11 @@ The following examples will be used to demonstrate accessing the SNOMED API thro
 - Find/get a concept by a concept SCTID (e.g. "109152007")
 - Find a concept by a string (e.g. "heart") but only in the Procedures semantic tag
 
-All of the examples use a hard coded URL, edition name, and version number which point to a server hosted by IHTSDO (www.ihtsdo.org). These are the APIs that back the IHTSDO browser (<http://browser.ihtsdotools.org>)
+All of the examples use a hard coded URL, edition name, and version number which point to a server hosted by SNOMED International (www.snomed.org). These are the APIs that back the IHTSDO browser (<http://browser.ihtsdotools.org>)
 
 - baseUrl = <http://browser.ihtsdotools.org/api/snomed/>
 - edition = en-edition
-- version = 20160131
+- version = 20170131
 
 **[Back to top](#table-of-contents)**
 
@@ -68,7 +68,7 @@ Find comprehensive documentation here: TBD
 
 ## Resources
 
-- IHTSDO SNOMED CT browser: <http://browser.ihtsdotools.org>
+- SNOMED International SNOMED CT browser: <http://browser.ihtsdotools.org>
 - SNOMED CT Snapshot REST API: <https://github.com/IHTSDO/sct-snapshot-rest-api> (REST documentation here <http://docs.snomedctsnapshotapi.apiary.io/>)
 
 **[Back to top](#table-of-contents)**
@@ -89,6 +89,7 @@ Find comprehensive documentation here: TBD
 - [Alejandro Lopez Osornio](https://github.com/alopezo)
 - [Jesse Efron](https://github.com/yishaiil)
 - [Philip Wilford](https://github.com/philipwilford)
+- [Omid Mavadati](https://github.com/mavao)
 - [Other Contributors](https://github.com/IHTSDO/SNOMED-in-5-minutes/graphs/contributors)
 
 **[Back to top](#table-of-contents)**
@@ -100,6 +101,6 @@ See the included LICENSE.txt file.
 **[Back to top](#table-of-contents)**
 
 ## Suggestions for Future Work
+
 - 'supporting registration for a British GP' (i.e. searching within the GP/FP reference set & the UK language reference set)
 - 'deriving ICD-10 codes from registered SNOMED concepts (i.e. retrieving all entries of a SNOMED-concept from the ICD-10 extended mapping reference set)
-
