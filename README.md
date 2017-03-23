@@ -32,7 +32,7 @@ The following examples will be used to demonstrate accessing the SNOMED API thro
 - Find/get a concept by a concept SCTID (e.g. "109152007")
 - Find a concept by a string (e.g. "heart") but only in the Procedures semantic tag
 
-All of the examples use a hard coded URL, edition name, and version number which point to a server hosted by SNOMED International (www.snomed.org). These are the APIs that back the IHTSDO browser (<http://browser.ihtsdotools.org>)
+All of the examples use a hard coded URL, edition name, and version number which point to a server hosted by SNOMED International (www.snomed.org). These are the APIs that back the SNOMED International browser (<http://browser.ihtsdotools.org>)
 
 - baseUrl = <http://browser.ihtsdotools.org/api/snomed/>
 - edition = en-edition
