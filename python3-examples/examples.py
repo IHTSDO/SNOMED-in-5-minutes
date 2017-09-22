@@ -4,16 +4,16 @@ import json
 
 baseUrl = 'http://browser.ihtsdotools.org/api/snomed/'
 edition = 'en-edition'
-version = 'v20160131'
+version = 'v20170731'
 
 #Prints fsn of a concept
 def getConceptById(id):
     url = baseUrl + edition + '/' + version + '/concepts/' + id
-    response = urlopen(url).read()    
+    response = urlopen(url).read()
     data = json.loads(response.decode('utf-8'))
 
     print (data['fsn'])
-    
+
 #Prints description by id
 def getDescriptionById(id):
     url = baseUrl + edition + '/' + version + '/descriptions/' + id
@@ -36,7 +36,7 @@ def getDescriptionsByStringFromProcedure(searchTerm, semanticTag):
     response = urlopen(url).read()
     data = json.loads(response.decode('utf-8'))
 
-    print (data['details']['total']) 
+    print (data['details']['total'])
 
 getConceptById('109152007')
 getDescriptionById('679406011')

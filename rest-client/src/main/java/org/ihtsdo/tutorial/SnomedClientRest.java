@@ -30,7 +30,7 @@ public class SnomedClientRest {
   private final String edition = "en-edition";
 
   /** The version. */
-  private final String version = "20160131";
+  private final String version = "20170731";
 
   /**
    * Instantiates an empty {@link SnomedClientRest}.

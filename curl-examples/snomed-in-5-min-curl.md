@@ -12,7 +12,7 @@ The Browser as a terminology server
 
 The base url for the REST API of IHTSDO browser backend terminology services is:
 
-http://browser.ihtsdotools.org/api/snomed/en-edition/v20160131
+http://browser.ihtsdotools.org/api/snomed/en-edition/v20170731
 
 In this example its using the International Edition and the January 31st 2016 release, as stated in the last two parameters of the example URL.
 
@@ -36,7 +36,7 @@ The following examples can be types into the command line of any terminal that h
 Searching for "heart attack":
 
 ```
-curl --silent "http://browser.ihtsdotools.org/api/snomed/en-edition/v20160131/descriptions?query=heart%20attack&limit=50&searchMode=partialMatching&lang=english&statusFilter=activeOnly&skipTo=0&returnLimit=100&normalize=true" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['details']['total'];"
+curl --silent "http://browser.ihtsdotools.org/api/snomed/en-edition/v20170731/descriptions?query=heart%20attack&limit=50&searchMode=partialMatching&lang=english&statusFilter=activeOnly&skipTo=0&returnLimit=100&normalize=true" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['details']['total'];"
 ```
 
 This command will obtain a json response from the server, parse it, and display the property "total" in the "details", this represents the number of descriptions that match with our search query.
@@ -50,7 +50,7 @@ Output:
 Same API call, but now we display the first match FSN:
 
 ` 
-curl --silent "http://browser.ihtsdotools.org/api/snomed/en-edition/v20160131/descriptions?query=heart%20attack&limit=50&searchMode=partialMatching&lang=english&statusFilter=activeOnly&skipTo=0&returnLimit=100&normalize=true" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['matches'][0]['fsn'];"
+curl --silent "http://browser.ihtsdotools.org/api/snomed/en-edition/v20170731/descriptions?query=heart%20attack&limit=50&searchMode=partialMatching&lang=english&statusFilter=activeOnly&skipTo=0&returnLimit=100&normalize=true" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['matches'][0]['fsn'];"
 `
 
 Output:
@@ -62,7 +62,7 @@ Myocardial infarction (disorder)
 Searching for the keyword "heart", but only in the "procedure" hierarchy, this is specified in the query parameter `&semanticFilter=procedure`:
 
 `
-curl --silent "http://browser.ihtsdotools.org/api/snomed/en-edition/v20160131/descriptions?query=heart&limit=50&searchMode=partialMatching&lang=english&statusFilter=activeOnly&skipTo=0&returnLimit=100&semanticFilter=procedure&normalize=true" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['details']['total'];"
+curl --silent "http://browser.ihtsdotools.org/api/snomed/en-edition/v20170731/descriptions?query=heart&limit=50&searchMode=partialMatching&lang=english&statusFilter=activeOnly&skipTo=0&returnLimit=100&semanticFilter=procedure&normalize=true" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['details']['total'];"
 `
 
 This command will obtain a json response from the server, parse it, and display the property "total" in the "details", this represents the number of descriptions that match with our search query.
@@ -77,7 +77,7 @@ Output:
 When searching by description id the "matches" property contains only one element, matching the provided identifier:
 
 `
-curl --silent "http://browser.ihtsdotools.org/api/snomed/en-edition/v20160131/descriptions/679406011" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['matches'][0]['term'];"
+curl --silent "http://browser.ihtsdotools.org/api/snomed/en-edition/v20170731/descriptions/679406011" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['matches'][0]['term'];"
 `
 
 Output:
@@ -91,7 +91,7 @@ Methylphenyltetrahydropyridine (substance)
 The API call will retrieve the complete concept information for the provided conceptId.
 
 `
-curl --silent http://browser.ihtsdotools.org/api/snomed/en-edition/v20160131/concepts/109152007 | python -c "import json,sys;obj=json.load(sys.stdin);print obj['fsn'];"
+curl --silent http://browser.ihtsdotools.org/api/snomed/en-edition/v20170731/concepts/109152007 | python -c "import json,sys;obj=json.load(sys.stdin);print obj['fsn'];"
 `
 
 Output:
@@ -105,7 +105,7 @@ Bilirubin test kit (substance)
 ### Getting full concept details into a local .json file
 
 `
-curl http://browser.ihtsdotools.org/api/snomed/en-edition/v20160131/concepts/195967001 > concept.json
+curl http://browser.ihtsdotools.org/api/snomed/en-edition/v20170731/concepts/195967001 > concept.json
 `
 
 Notice that the resource identifier "concepts" and a valid conceptId "195967001" were added to the base URL to contruct the final URL. All the examples will follow this example and the details can be consultes in the full [REST API documentation](http://docs.snomedctsnapshotapi.apiary.io/).
@@ -115,7 +115,7 @@ This command will create a concept.json file that will contain the full JSON obj
 ### Show the default term for the concept
 
 `
-curl --silent http://browser.ihtsdotools.org/api/snomed/en-edition/v20160131/concepts/195967001 | python -c "import json,sys;obj=json.load(sys.stdin);print obj['defaultTerm'];"
+curl --silent http://browser.ihtsdotools.org/api/snomed/en-edition/v20170731/concepts/195967001 | python -c "import json,sys;obj=json.load(sys.stdin);print obj['defaultTerm'];"
 `
 
 Output:
@@ -129,7 +129,7 @@ Asthma (disorder)
 ### Count the Inferred children of the concept
 
 `
-curl --silent http://browser.ihtsdotools.org/api/snomed/en-edition/v20160131/concepts/195967001/children?form=inferred | python -c "import json,sys;obj=json.load(sys.stdin);print len(obj);"
+curl --silent http://browser.ihtsdotools.org/api/snomed/en-edition/v20170731/concepts/195967001/children?form=inferred | python -c "import json,sys;obj=json.load(sys.stdin);print len(obj);"
 `
 
 Output:
@@ -143,7 +143,7 @@ This concept has 24 children (direct subtypes, not descendants) in the inferred 
 ### Count the Inferred descendants of the concept
 
 `
-curl --silent http://browser.ihtsdotools.org/api/snomed/en-edition/v20160131/concepts/195967001 | python -c "import json,sys;obj=json.load(sys.stdin);print obj['inferredDescendants'];"
+curl --silent http://browser.ihtsdotools.org/api/snomed/en-edition/v20170731/concepts/195967001 | python -c "import json,sys;obj=json.load(sys.stdin);print obj['inferredDescendants'];"
 `
 
 Output:
