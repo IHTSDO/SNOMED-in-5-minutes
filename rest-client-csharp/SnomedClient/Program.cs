@@ -13,13 +13,13 @@ namespace SnomedClient
         static void Main(string[] args)
         {
             // SNOMED-in-5-minutes
-            SnomedClient client = new SnomedClient("http://browser.ihtsdotools.org/api/snomed", "en-edition", "20170731");
+            SnomedClient client = new SnomedClient("http://browser.ihtsdotools.org/api/snomed", "en-edition", "20180131");
             if (args.Length > 1)
             {
                 Console.WriteLine("");
                 Console.WriteLine("Using URL                 : http://browser.ihtsdotools.org/api/snomed");
                 Console.WriteLine("Edition                   : en-edition");
-                Console.WriteLine("Release                   : 20170731");
+                Console.WriteLine("Release                   : 20180131");
                 Console.WriteLine("");
             }
 

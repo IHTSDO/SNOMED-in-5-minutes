@@ -4,7 +4,7 @@ import json
 
 baseUrl = 'http://browser.ihtsdotools.org/api/snomed/'
 edition = 'en-edition'
-version = 'v20170731'
+version = 'v20180131'
 
 #Prints fsn of a concept
 def getConceptById(id):

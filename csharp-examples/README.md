@@ -66,7 +66,7 @@ This call writes some output to the console:
 ```
 Using URL                 : http://browser.ihtsdotools.org/api/snomed
 Edition                   : en-edition
-Release                   : 20170731
+Release                   : 20180131
 
 Searching for text        : heart attack
 Total entries returned    : 13
@@ -84,7 +84,7 @@ This call writes some output to the console:
 ```
 Using URL                 : http://browser.ihtsdotools.org/api/snomed
 Edition                   : en-edition
-Release                   : 20170731
+Release                   : 20180131
 
 Searching Description Id  : 679406011
 FSN Found                 : Methylphenyltetrahydropyridine (substance)
@@ -102,7 +102,7 @@ This call writes some output to the console:
 ```
 Using URL                 : http://browser.ihtsdotools.org/api/snomed
 Edition                   : en-edition
-Release                   : 20170731
+Release                   : 20180131
 
 Searching Concept Id      : 109152007
 FSN Found                 : Bilirubin test kit (substance)
@@ -120,7 +120,7 @@ This call writes some output to the console:
 ```
 Using URL                 : http://browser.ihtsdotools.org/api/snomed
 Edition                   : en-edition
-Release                   : 20170731
+Release                   : 20180131
 
 Searching for text        : heart
 With filter               : procedure
