@@ -7,7 +7,7 @@ var myApp = angular.module('myApp', [ 'ui.bootstrap' ]).config(function($rootSco
 });
 
 // Declare top level URL vars
-var baseUrl = "http://browser.ihtsdotools.org/api/snomed/";
+var baseUrl = "http://browser.ihtsdotools.org/api/v1/snomed/";
 var edition = "en-edition";
 var version = "20180131";
 
