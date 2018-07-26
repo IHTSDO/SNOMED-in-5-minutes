@@ -96,7 +96,9 @@ Find comprehensive documentation here: TBD
 
 ## License
 
-See the included LICENSE.txt file.
+Apache 2.0 
+
+See the included LICENSE file for details.
 
 **[Back to top](#table-of-contents)**
 
