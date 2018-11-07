@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/iosLightHeader"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height_size"
+        android:background="@color/iosHeader"
+        tools:context=".AllMedicationsFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SNOMED CT Search"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/back_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_with_search_bar_height_size"
+        android:background="@color/iosHeader"
+        android:orientation="vertical"
+        >
+
+        <android.support.constraint.Guideline
+            android:id="@+id/search_left_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="0sp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/search_right_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="0sp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/search_top_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="0sp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/top_search"
+            android:layout_width="0sp"
+            android:layout_height="@dimen/search_bar_height_size"
+            android:background="@drawable/search_background"
+            app:layout_constraintLeft_toRightOf="@id/search_left_guideline"
+            app:layout_constraintRight_toLeftOf="@id/search_right_guideline"
+            app:layout_constraintTop_toBottomOf="@id/search_top_guideline">
+
+            <SearchView
+                android:id="@+id/tv_search_bar"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:queryBackground="@null"
+                android:textSize="8sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/search_type" />
+
+            <LinearLayout
+                android:id="@+id/search_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingEnd="10dp"
+                android:background="@drawable/snomed_search_selector"
+                app:layout_constraintLeft_toRightOf="@id/tv_search_bar"
+                app:layout_constraintRight_toRightOf="parent"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_search_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="By Term" />
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <LinearLayout
+            android:id="@+id/div"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/div"
+            android:background="@color/gris"
+            android:orientation="horizontal"
+
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+        <com.jorgegatica.snomedbrowser.util.RecyclerViewEmptySupport
+            android:id="@+id/rv_json_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+</LinearLayout>

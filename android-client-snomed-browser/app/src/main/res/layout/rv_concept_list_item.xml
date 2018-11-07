@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_match"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    android:background="@android:color/white"
+    >
+
+    <android.support.constraint.Guideline
+        android:id="@+id/left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="0sp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="0sp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="0sp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="5dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="0sp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="5dp" />
+
+    <TextView
+        android:id="@+id/tv_term"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:text="term"
+        android:textSize="@dimen/sub_subheader_text_size"
+        app:layout_constraintBottom_toTopOf="@id/bottom_guideline"
+        app:layout_constraintLeft_toRightOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@id/tv_fsn"
+        app:layout_constraintTop_toBottomOf="@id/top_guideline" />
+
+    <TextView
+        android:id="@+id/tv_fsn"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="fsn"
+        android:textSize="@dimen/detail_text_size"
+        app:layout_constraintBottom_toTopOf="@id/bottom_guideline"
+        app:layout_constraintLeft_toRightOf="@id/tv_term"
+        app:layout_constraintRight_toLeftOf="@id/arrow"
+        app:layout_constraintTop_toBottomOf="@id/top_guideline" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="@dimen/click_arrow_size"
+        android:layout_height="@dimen/click_arrow_size"
+        android:paddingEnd="@dimen/padding_right_click_arrow"
+        android:paddingRight="5dp"
+        android:src="@drawable/icons8_next_filled_100"
+        android:tint="@color/iosGrayText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/right_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/div"
+        android:background="@color/gris"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

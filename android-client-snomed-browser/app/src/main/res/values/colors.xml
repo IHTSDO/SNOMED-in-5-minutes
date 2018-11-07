@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="gris">#e0e0e0</color>
+
+    <color name="iosAccent">#fc2f51</color>
+    <color name="iosHeader">#f5f5f6</color>
+    <color name="iosGrayText">#909091</color>
+    <color name="iosGraySearch">#e1e2e4</color>
+    <color name="iosLightHeader">#f0eff6</color>
+    <color name="iosMedicalIDbackground">#fdfdfe</color>
+    <color name="iosGreenSwitch">#2cd46e</color>
+    <color name="text_dark">#395074</color>
+
+    <color name="medication_light">#fd9274</color>
+    <color name="medication_dark">#fa7558</color>
+    <color name="allergy_light">#b98efa</color>
+    <color name="allergy_dark">#975ee0</color>
+    <color name="condition_light">#fdca19</color>
+    <color name="condition_dark">#f3b221</color>
+    <color name="immunization_light">#7cbafd</color>
+    <color name="immunization_dark">#7ca7fb</color>
+    <color name="lab_results_light">#ea96fd</color>
+    <color name="lab_results_dark">#e96ffb</color>
+    <color name="clinical_vitals_light">#4bd75c</color>
+    <color name="clinical_vitals_dark">#49bd5d</color>
+    <color name="procedure_light">#aab3bb</color>
+    <color name="procedure_dark">#8d9297</color>
+
+    <color name="gris_fondo_ios">#edecf3</color>
+
+
+</resources>

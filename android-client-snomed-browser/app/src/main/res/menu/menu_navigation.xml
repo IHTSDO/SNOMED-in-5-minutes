@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/snomed"
+        android:icon="@drawable/snomed_logo"
+        android:title="SNOMED CT Search" />
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/info_squared"
+        android:title="About" />
+</menu>

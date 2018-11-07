@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="?selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_stated_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="@dimen/detail_text_size"
+        android:text="Type → Target" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/div"
+        android:background="@color/gris"
+        app:layout_constraintTop_toBottomOf="@id/tv_stated_rel"
+        />
+
+</android.support.constraint.ConstraintLayout>
