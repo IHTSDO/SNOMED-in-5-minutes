@@ -4,7 +4,7 @@
 [![Build Status][travis-image]][travis-url]
 
 
-This is a simple Android Client for [SNOMED International SNOMED CT Browser Site](http://browser.ihtsdotools.org/?) based on Java and Python examples from [SNOMED-in-5-minutes](https://github.com/IHTSDO/SNOMED-in-5-minutes) repository
+This is a simple SNOMED API Android Client based on Java and Python examples from [SNOMED-in-5-minutes](https://github.com/IHTSDO/SNOMED-in-5-minutes) repository
 
 
 ## Building the Project
