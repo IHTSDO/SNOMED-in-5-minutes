@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris_fondo_ios"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height_size"
+        android:background="@color/iosHeader">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="About SNOMED Browser"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/back_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/div"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/div"
+            android:background="@color/gris"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/empty_rv_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AboutFragment">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/empty_left_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="0sp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/empty_right_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="0sp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/empty_top_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="0sp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/margin_between_cards" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/empty_bottom_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="0sp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="@dimen/margin_between_cards" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/corner_radius_card"
+            app:layout_constraintLeft_toRightOf="@id/empty_left_guideline"
+            app:layout_constraintRight_toLeftOf="@id/empty_right_guideline"
+            app:layout_constraintTop_toBottomOf="@id/empty_top_guideline">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/empty_text_left_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.04" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/empty_text_right_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.96" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/empty_text_top_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="@dimen/margin_between_cards" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/empty_text_bottom_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_end="@dimen/margin_between_cards" />
+
+
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/empty_text_top_guideline"
+                    android:text="SNOMED Browser is an unofficial SNOMED CT Browser client based on Java and Python examples from SNOMED In 5 Minutes GitHub Repository"
+                    app:layout_constraintLeft_toRightOf="@id/empty_text_left_guideline"
+                    app:layout_constraintRight_toLeftOf="@id/empty_text_right_guideline" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/about"
+                    android:text="Dr. Jorge Gatica, DDS, Java/Android Developer"
+                    app:layout_constraintLeft_toRightOf="@id/empty_text_left_guideline"
+                    app:layout_constraintRight_toLeftOf="@id/empty_text_right_guideline"
+                    app:layout_constraintBottom_toTopOf="@id/empty_text_bottom_guideline"/>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

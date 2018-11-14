@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_parents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/div"
+        android:background="@color/gris"
+        app:layout_constraintTop_toBottomOf="@id/rv_parents"
+        />
+    <TextView
+        android:focusable="true"
+        android:clickable="true"
+        android:background="?selectableItemBackground"
+        android:id="@+id/tv_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:textSize="@dimen/sub_subheader_text_size"
+        android:text="Parent"
+        app:layout_constraintTop_toBottomOf="@id/div"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>

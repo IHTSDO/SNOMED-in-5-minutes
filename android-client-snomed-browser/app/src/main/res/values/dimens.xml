@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="header_text_size">23sp</dimen>
+    <dimen name="sub_subheader_text_size">17sp</dimen>
+    <dimen name="subheader_text_size">21sp</dimen>
+    <dimen name="detail_text_size">14dp</dimen>
+    <dimen name="div">1dp</dimen>
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">11sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">11sp</dimen>
+    <dimen name="back_text_size">19sp</dimen>
+    <dimen name="top_bar_height_size">50dp</dimen>
+    <dimen name="sub_text_size">16dp</dimen>
+    <dimen name="records_bar_text_size">19dp</dimen>
+    <dimen name="health_records_header_text_size">40dp</dimen>
+    <dimen name="health_records_header_top_bar_size">70dp</dimen>
+    <dimen name="health_records_header_top_bar_div_size">68.5dp</dimen>
+    <dimen name="health_records_header_left_margin">15dp</dimen>
+    <dimen name="icon_size_pre_item">60dp</dimen>
+    <dimen name="item_text_size">20dp</dimen>
+    <dimen name="item_subtext_size">18dp</dimen>
+    <dimen name="click_arrow_size">23dp</dimen>
+    <dimen name="subtitle_health_records_size">14sp</dimen>
+    <dimen name="padding_right_click_arrow">10sp</dimen>
+    <dimen name="padding_corner_radius">20dp</dimen>
+    <dimen name="name_resource_header_text_size">29dp</dimen>
+    <dimen name="sub_text_name_resource_text_size">17dp</dimen>
+    <dimen name="corner_radius_card">10dp</dimen>
+    <dimen name="margin_between_cards">20dp</dimen>
+    <dimen name="card_header_no_text_height_size">20dp</dimen>
+    <dimen name="top_bar_with_search_bar_height_size">60dp</dimen>
+    <dimen name="search_bar_height_size">40dp</dimen>
+    <dimen name="collapasable_toolbar_size">130dp</dimen>
+    <dimen name="collapasable_toolbar_search_size">80dp</dimen>
+</resources>
