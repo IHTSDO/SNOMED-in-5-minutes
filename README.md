@@ -19,6 +19,7 @@ This is an easy-to-use tutorial for accessing SNOMED APIs within 5 min.
   - java-examples: examples with java
   - javascript-examples: examples with javascript
   - model: JAXB-enabled classes for representing the RF2 domain model
+  - php-examples: examples with php
   - python3-examples: examples with python
   - rest-client: a Java client for the REST services
   - rest-client-csharp: a CSharp client for the REST services
@@ -59,6 +60,10 @@ All of the examples use a hard coded URL, edition name, and version number which
 ### Python
 
 - [Click for Python examples.](../master/python3-examples/ "Python Examples")
+
+### PHP
+
+- [Click for Python examples.](../master/php-examples/ "PHP Examples")
 
 **[Back to top](#table-of-contents)**
 
