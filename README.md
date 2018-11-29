@@ -63,7 +63,7 @@ All of the examples use a hard coded URL, edition name, and version number which
 
 ### PHP
 
-- [Click for Python examples.](../master/php-examples/ "PHP Examples")
+- [Click for PHP examples.](../master/php-examples/ "PHP Examples")
 
 **[Back to top](#table-of-contents)**
 
