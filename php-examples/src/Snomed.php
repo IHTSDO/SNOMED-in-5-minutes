@@ -5,7 +5,7 @@
  * Time: 01:26
  */
 
-class Snomen
+class Snomed
 {
 
     /**
@@ -29,7 +29,7 @@ class Snomen
     private $client;
 
     /**
-     * Snomen constructor.
+     * Snomed constructor.
      */
     public function __construct()
     {
