@@ -19,6 +19,7 @@ This is an easy-to-use tutorial for accessing SNOMED APIs within 5 min.
   - java-examples: examples with java
   - javascript-examples: examples with javascript
   - model: JAXB-enabled classes for representing the RF2 domain model
+  - php-examples: examples with php
   - python3-examples: examples with python
   - rest-client: a Java client for the REST services
   - rest-client-csharp: a CSharp client for the REST services
@@ -60,6 +61,10 @@ All of the examples use a hard coded URL, edition name, and version number which
 
 - [Click for Python examples.](../master/python3-examples/ "Python Examples")
 
+### PHP
+
+- [Click for PHP examples.](../master/php-examples/ "PHP Examples")
+
 **[Back to top](#table-of-contents)**
 
 ## Further Documentation
@@ -90,6 +95,7 @@ Find comprehensive documentation here: TBD
 - [Jesse Efron](https://github.com/yishaiil)
 - [Philip Wilford](https://github.com/philipwilford)
 - [Omid Mavadati](https://github.com/mavao)
+- [Ahmed Mohamed](https://github.com/me2resh)
 - [Other Contributors](https://github.com/IHTSDO/SNOMED-in-5-minutes/graphs/contributors)
 
 **[Back to top](#table-of-contents)**
