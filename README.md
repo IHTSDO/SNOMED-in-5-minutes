@@ -90,6 +90,7 @@ Find comprehensive documentation here: TBD
 - [Jesse Efron](https://github.com/yishaiil)
 - [Philip Wilford](https://github.com/philipwilford)
 - [Omid Mavadati](https://github.com/mavao)
+- [Ahmed Mohamed](https://github.com/me2resh)
 - [Other Contributors](https://github.com/IHTSDO/SNOMED-in-5-minutes/graphs/contributors)
 
 **[Back to top](#table-of-contents)**
