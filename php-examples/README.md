@@ -8,7 +8,7 @@ The examples were written using Guzzle PHP HTTP client
 To run the examples:
 
 ```
-git clone https://github.com/WestCoastInformatics/Snomed-In-5-Minutes.git
+git clone https://github.com/me2resh/Snomed-In-5-Minutes.git
 cd Snomed-In-5-Minutes/php-examples
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
