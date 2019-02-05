@@ -23,6 +23,7 @@ This is an easy-to-use tutorial for accessing SNOMED APIs within 5 min.
   - python3-examples: examples with python
   - rest-client: a Java client for the REST services
   - rest-client-csharp: a CSharp client for the REST services
+  - ruby-examples: examples with Ruby based on the Python examples
 
 ## Examples
 
@@ -60,6 +61,10 @@ All of the examples use a hard coded URL, edition name, and version number which
 ### Python
 
 - [Click for Python examples.](../master/python3-examples/ "Python Examples")
+
+### Ruby
+
+- [Click for Ruby examples.](../master/ruby-examples/ "Ruby Examples")
 
 ### PHP
 
