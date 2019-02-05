@@ -2,7 +2,7 @@ from urllib.request import urlopen
 from urllib.parse import quote
 import json
 
-baseUrl = 'http://browser.ihtsdotools.org/api/v1/snomed/'
+baseUrl = 'https://browser.ihtsdotools.org/api/v1/snomed/'
 edition = 'en-edition'
 version = 'v20180131'
 
