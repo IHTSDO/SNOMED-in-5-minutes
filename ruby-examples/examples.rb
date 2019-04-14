@@ -4,7 +4,7 @@ require 'json'
 # hard-coded URLs
 BASE_URL = 'https://browser.ihtsdotools.org/api/v1/snomed/'
 EDITION = 'en-edition'
-VERSION = 'v20180131'
+VERSION = 'v20190131'
 
 # Prints fsn of a concept
 def get_concept_by_id(id)

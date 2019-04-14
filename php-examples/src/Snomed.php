@@ -21,7 +21,7 @@ class Snomed
     /**
      * @var string
      */
-    private $version = 'v20180131';
+    private $version = 'v20190131';
 
     /**
      * @var \GuzzleHttp\Client

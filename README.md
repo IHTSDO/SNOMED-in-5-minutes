@@ -38,7 +38,7 @@ All of the examples use a hard coded URL, edition name, and version number which
 
 - baseUrl = <http://browser.ihtsdotools.org/api/v1/snomed/>
 - edition = en-edition
-- version = 20180131
+- version = 20190131
 
 **[Back to top](#table-of-contents)**
 

@@ -12,7 +12,7 @@ public class SnomedAPI {
     public static final String BASE_URL = "http://browser.ihtsdotools.org/";
     public static final String API_BASE = "api/v1/snomed/";
     public static final String EDITION = "en-edition";
-    public static final String RELEASE = "v20180131";
+    public static final String RELEASE = "v20190131";
     public static final String URL = API_BASE + EDITION + "/" + RELEASE;
 
 
