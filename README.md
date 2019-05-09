@@ -24,6 +24,7 @@ This is an easy-to-use tutorial for accessing SNOMED APIs within 5 min.
   - rest-client: a Java client for the REST services
   - rest-client-csharp: a CSharp client for the REST services
   - ruby-examples: examples with Ruby based on the Python examples
+  - go-examples: examples with golang
 
 ## Examples
 
@@ -69,6 +70,10 @@ All of the examples use a hard coded URL, edition name, and version number which
 ### PHP
 
 - [Click for PHP examples.](../master/php-examples/ "PHP Examples")
+
+### Golang
+
+- [Click for GO examples.](../master/go-examples/ "Golang Examples")
 
 **[Back to top](#table-of-contents)**
 
