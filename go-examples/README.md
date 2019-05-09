@@ -33,7 +33,7 @@ First, Install golang in your machine https://golang.org/doc/install
 # get kingpin package
 go get gopkg.in/alecthomas/kingpin.v2
 
-# Open the file snomed.go and do your modifications, then 
+# Open the file snomed.go and do your modifications 
 vim snomed.go
 
 # run the following build command to create a new executable
