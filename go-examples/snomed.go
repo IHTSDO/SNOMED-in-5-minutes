@@ -74,7 +74,7 @@ func getConceptByStringInProceduresSemanticTag(searchTerm string) string {
 
 }
 
-//
+// Perform get request against an API URL
 func lookup(url string) string {
 	response, err := http.Get(url)
 	if err != nil {
