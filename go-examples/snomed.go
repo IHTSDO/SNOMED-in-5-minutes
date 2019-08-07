@@ -8,9 +8,9 @@ import (
 	"os"
 )
 
-const baseUrl string = "https://browser.ihtsdotools.org/api/v1/snomed/"
-const edition string = "en-edition"
-const version string = "v20190131"
+const baseUrl string = "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/"
+const edition string = "MAIN"
+const version string = "2019-07-31"
 
 var (
 	// Find a concept by string commands
@@ -49,7 +49,7 @@ func main() {
 
 // Find a concept by string commands
 func getConceptByString(searchTerm string, resultLimit string) string {
-	url := baseUrl + edition + "/" + version + "/descriptions?query=" + searchTerm + "&limit=50&searchMode=partialMatching&lang=english&statusFilter=activeOnly&skipTo=0&returnLimit=" + resultLimit + "&normalize=true"
+	url := baseUrl + edition + "/" + version + "/concepts?term=" + searchTerm + "&activeFilter=true&offset=0&limit=" + resultLimit
 	return lookup(url)
 }
 
@@ -62,14 +62,14 @@ func getConceptByDescription(descriptionId string) string {
 
 // Find a concept by concept STCID
 func getConceptBySCTID(stcId string) string {
-	url := baseUrl + edition + "/" + version + "/concepts/" + stcId
+	url := baseUrl + "/browser/" + edition + "/" + version + "/concepts/" + stcId
 	return lookup(url)
 
 }
 
 // Find a concept by a string in semantic tags
 func getConceptByStringInProceduresSemanticTag(searchTerm string) string {
-	url := baseUrl + edition + "/" + version + "/descriptions?query=" + searchTerm + "&limit=50&searchMode=partialMatching&lang=english&statusFilter=activeOnly&skipTo=0&returnLimit=100&semanticFilter=procedure&normalize=true"
+	url := baseUrl + "/browser/" +edition + "/" + version + "/descriptions?term=" + searchTerm + "&conceptActive=true&semanticTag=procedure&groupByConcept=false&searchMode=STANDARD&offset=0&limit=50"
 	return lookup(url)
 
 }
