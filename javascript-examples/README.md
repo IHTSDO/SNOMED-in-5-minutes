@@ -1,7 +1,7 @@
 JavaScript Tutorial
 ===================
 
-This tutorial focuses in using JavaScript with a basic sigle-page HTML application to access SNOMED CT content from the IHTSDO Browser backend services.
+This tutorial focuses in using JavaScript with a basic sigle-page HTML application to access SNOMED CT content from the Snowstorm SNOMED CT Terminology Server.
 
 To access the application, clone the repository and open the javascript-examples/index.html page in a browser.
 
