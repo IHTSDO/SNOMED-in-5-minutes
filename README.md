@@ -1,6 +1,6 @@
 # SNOMED In 5 Minutes
 
-This is an easy-to-use tutorial for accessing SNOMED APIs within 5 min.
+This is an easy-to-use tutorial for accessing SNOMED APIs within 5 min using the SNOMED International terminology server, [Snowstorm](https://github.com/IHTSDO/snowstorm).
 
 ## Table of Contents
 
@@ -35,11 +35,9 @@ The following examples will be used to demonstrate accessing the SNOMED API thro
 - Find/get a concept by a concept SCTID (e.g. "109152007")
 - Find a concept by a string (e.g. "heart") but only in the Procedures semantic tag
 
-All of the examples use a hard coded URL, edition name, and version number which point to a server hosted by SNOMED International (www.snomed.org). These are the APIs that back the SNOMED International browser (<http://browser.ihtsdotools.org>)
+All of the examples use a hard coded URL, edition name, and version number which point to a server hosted by SNOMED International (www.snomed.org). These are the APIs that back the SNOMED International browser (<https://browser.ihtsdotools.org>)
 
-- baseUrl = <http://browser.ihtsdotools.org/api/v1/snomed/>
-- edition = en-edition
-- version = 20190131
+- baseUrl = <https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/>
 
 **[Back to top](#table-of-contents)**
 
@@ -84,7 +82,7 @@ Find comprehensive documentation here: TBD
 ## Resources
 
 - SNOMED International SNOMED CT browser: <http://browser.ihtsdotools.org>
-- SNOMED CT Snapshot REST API: <https://github.com/IHTSDO/sct-snapshot-rest-api> (REST documentation here <http://docs.snomedctsnapshotapi.apiary.io/>)
+- Snowstorm SNOMED CT Terminology Server: <https://github.com/IHTSDO/snowstorm> (REST documentation here <https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/>)
 
 **[Back to top](#table-of-contents)**
 
@@ -106,6 +104,7 @@ Find comprehensive documentation here: TBD
 - [Philip Wilford](https://github.com/philipwilford)
 - [Omid Mavadati](https://github.com/mavao)
 - [Ahmed Mohamed](https://github.com/me2resh)
+- [Kai Kewley](https://github.com/kaicode)
 - [Other Contributors](https://github.com/IHTSDO/SNOMED-in-5-minutes/graphs/contributors)
 
 **[Back to top](#table-of-contents)**
