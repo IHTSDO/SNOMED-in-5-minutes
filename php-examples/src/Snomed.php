@@ -11,17 +11,17 @@ class Snomed
     /**
      * @var string
      */
-    private $baseUrl = 'http://browser.ihtsdotools.org/api/v1/snomed/';
+    private $baseUrl = 'https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/';
 
     /**
      * @var string
      */
-    private $edition = 'en-edition';
+    private $edition = 'MAIN';
 
     /**
      * @var string
      */
-    private $version = 'v20190131';
+    private $version = '2019-07-31';
 
     /**
      * @var \GuzzleHttp\Client
@@ -44,19 +44,19 @@ class Snomed
      */
     function getConceptByString($searchTerm)
     {
-        $url = $this->baseUrl . $this->edition . '/' . $this->version . '/descriptions?query=' . $searchTerm . '&limit=50&searchMode=partialMatching&lang=english&statusFilter=activeOnly&skipTo=0&returnLimit=100&normalize=true';
+        $url = $this->baseUrl . $this->edition . '/' . $this->version . '/concepts?term=' . $searchTerm . '&activeFilter=true&offset=0&limit=50';
         $res = $this->client->get($url);
 
         return $res->getBody()->getContents();
     }
 
     /**
-     * Find/get a concept by a description SCTID (e.g. "679406011")
+     * Find/get a description by a description SCTID (e.g. "679406011")
      * @param $id
      *
      * @return string
      */
-    function getConceptByDescription($id)
+    function getDescriptionById($id)
     {
 
         $url = $this->baseUrl . $this->edition . '/' . $this->version . '/descriptions/' . $id;
@@ -75,7 +75,7 @@ class Snomed
     {
 
 
-        $url = $this->baseUrl . $this->edition . '/' . $this->version . '/concepts/' . $id;
+        $url = $this->baseUrl . '/browser/' . $this->edition . '/' . $this->version . '/concepts/' . $id;
         $res = $this->client->get($url);
 
         return $res->getBody()->getContents();
@@ -90,7 +90,7 @@ class Snomed
     function getConceptByStringInProceduresSemanticTag($searchTerm)
     {
 
-        $url = $this->baseUrl . $this->edition . '/' . $this->version . '/descriptions?query=' . $searchTerm . '&limit=50&searchMode=partialMatching&lang=english&statusFilter=activeOnly&skipTo=0&returnLimit=100&semanticFilter=procedure&normalize=true';
+        $url = $this->baseUrl . '/browser/' . $this->edition . '/' . $this->version . '/descriptions?term=' . $searchTerm . '&conceptActive=true&semanticTag=procedure&groupByConcept=false&searchMode=STANDARD&offset=0&limit=50';
         $res = $this->client->get($url);
 
         return $res->getBody()->getContents();
