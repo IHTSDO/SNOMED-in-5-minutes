@@ -14,6 +14,7 @@ This is an easy-to-use tutorial for accessing SNOMED APIs within 5 min using the
 
 - top-level: aggregator for sub-modules (alphabetically):
 
+  - android-client-snomed-browser: examples for use in an Android client
   - csharp-examples: examples with csharp (.net)
   - curl-examples: examples with curl
   - java-examples: examples with java
@@ -41,14 +42,6 @@ All of the examples use a hard coded URL, edition name, and version number which
 
 **[Back to top](#table-of-contents)**
 
-### CSharp (.net)
-
-- [Click for CSharp examples.](../csharp/csharp-examples/ "CSharp Examples")
-
-### Java
-
-- [Click for Java examples.](../master/java-examples/ "Java Examples")
-
 ### Javascript
 
 - [Click for JavaScript examples.](../master/javascript-examples/ "JavaScript Examples")
@@ -74,6 +67,22 @@ All of the examples use a hard coded URL, edition name, and version number which
 - [Click for GO examples.](../master/go-examples/ "Golang Examples")
 
 **[Back to top](#table-of-contents)**
+
+## Needing some TLC
+
+The following examples are out of date and need updating  to wokr with Snowstorm. All contributions welcome!
+
+### Android client
+
+- [Click for Android examples.](../master/android-client-snomed-browser/ "Android Examples")
+
+### CSharp (.net)
+
+- [Click for CSharp examples.](../csharp/csharp-examples/ "CSharp Examples")
+
+### Java
+
+- [Click for Java examples.](../master/java-examples/ "Java Examples")
 
 ## Further Documentation
 
