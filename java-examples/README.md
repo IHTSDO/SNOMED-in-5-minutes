@@ -1,6 +1,8 @@
 Java Tutorial
 =============
 
+**NB - These examples have not yet been updated to work with the Snowstorm terminiology server**
+
 This tutorial focuses in using Java with a collection of pre-defined model objects to access SNOMED CT content from the IHTSDO Browser backend services.
 
 If you don' have Java in your system check the official [Java site](https://java.com/).

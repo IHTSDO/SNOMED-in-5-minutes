@@ -1,11 +1,11 @@
 GO Example
 ===================
 
-This example shows how to make simple calls against the SNOMED CT Snapshot REST API (IHTSDO/sct-snapshot-rest-api) using GO.
+This example shows how to make simple calls to access SNOMED CT content from the Snowstorm SNOMED CT Terminology Server. using GO.
 
-##To run the examples:
+## To run the examples:
 
-```
+```bash
 git clone https://github.com/IHTSDO/Snomed-In-5-Minutes.git
 cd Snomed-In-5-Minutes/go-examples
 
@@ -24,12 +24,13 @@ cd Snomed-In-5-Minutes/go-examples
 # Find a concept by a string (e.g. 'heart') but only in the Procedures semantic tag)
 ./snomed by-semantic-tag heart 1
 ```
-##To modify the examples:
+
+## To modify the examples:
 
 If you modified snomed.go and want to build a new version
 First, Install golang in your machine https://golang.org/doc/install
 
-```
+```bash
 # get kingpin package
 go get gopkg.in/alecthomas/kingpin.v2
 

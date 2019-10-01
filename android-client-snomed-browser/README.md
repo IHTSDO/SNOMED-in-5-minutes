@@ -3,9 +3,9 @@
 
 [![Build Status][travis-image]][travis-url]
 
+**NB - These examples have not yet been updated to work with the Snowstorm terminiology server**
 
 This is a simple SNOMED API Android Client based on Java and Python examples from [SNOMED-in-5-minutes](https://github.com/IHTSDO/SNOMED-in-5-minutes) repository
-
 
 ## Building the Project
 
