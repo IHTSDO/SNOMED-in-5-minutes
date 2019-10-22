@@ -2,7 +2,7 @@ from urllib.request import urlopen
 from urllib.parse import quote
 import json
 
-baseUrl = 'https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/'
+baseUrl = 'https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2'
 edition = 'MAIN'
 version = '2019-07-31'
 
@@ -16,7 +16,7 @@ def getConceptById(id):
 
 #Prints description by id
 def getDescriptionById(id):
-    url = baseUrl + edition + '/' + version + '/descriptions/' + id
+    url = baseUrl + '/' + edition + '/' + version + '/descriptions/' + id
     response = urlopen(url).read()
     data = json.loads(response.decode('utf-8'))
 
@@ -40,5 +40,5 @@ def getDescriptionsByStringFromProcedure(searchTerm, semanticTag):
 
 getConceptById('109152007')
 getDescriptionById('679406011')
-getDescriptionsByString('heart attack')
+getConceptsByString('heart attack')
 getDescriptionsByStringFromProcedure('heart', 'procedure')
