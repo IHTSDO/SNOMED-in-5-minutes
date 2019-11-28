@@ -2,7 +2,7 @@ from urllib.request import urlopen
 from urllib.parse import quote
 import json
 
-baseUrl = 'https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2'
+baseUrl = 'https://browser.ihtsdotools.org/snowstorm/snomed-ct'
 edition = 'MAIN'
 version = '2019-07-31'
 

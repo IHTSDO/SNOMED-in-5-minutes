@@ -38,7 +38,7 @@ The following examples will be used to demonstrate accessing the SNOMED API thro
 
 All of the examples use a hard coded URL, edition name, and version number which point to a server hosted by SNOMED International (www.snomed.org). These are the APIs that back the SNOMED International browser (<https://browser.ihtsdotools.org>)
 
-- baseUrl = <https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/>
+- baseUrl = <https://browser.ihtsdotools.org/snowstorm/snomed-ct/>
 
 **[Back to top](#table-of-contents)**
 
@@ -91,7 +91,7 @@ Find comprehensive documentation here: TBD
 ## Resources
 
 - SNOMED International SNOMED CT browser: <http://browser.ihtsdotools.org>
-- Snowstorm SNOMED CT Terminology Server: <https://github.com/IHTSDO/snowstorm> (REST documentation here <https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/>)
+- Snowstorm SNOMED CT Terminology Server: <https://github.com/IHTSDO/snowstorm> (REST documentation here <https://browser.ihtsdotools.org/snowstorm/snomed-ct/>)
 
 **[Back to top](#table-of-contents)**
 

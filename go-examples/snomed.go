@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-const baseUrl string = "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/"
+const baseUrl string = "https://browser.ihtsdotools.org/snowstorm/snomed-ct/"
 const edition string = "MAIN"
 const version string = "2019-07-31"
 

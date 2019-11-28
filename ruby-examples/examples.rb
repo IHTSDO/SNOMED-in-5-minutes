@@ -2,7 +2,7 @@ require 'net/http'
 require 'json'
 
 # hard-coded URLs
-BASE_URL = 'https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/'
+BASE_URL = 'https://browser.ihtsdotools.org/snowstorm/snomed-ct/'
 EDITION = 'MAIN'
 VERSION = '2019-07-31'
 

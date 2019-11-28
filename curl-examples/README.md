@@ -12,7 +12,7 @@ The Browser as a terminology server
 
 The base url for the REST API of IHTSDO browser backend terminology services is:
 
-<https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/>
+<https://browser.ihtsdotools.org/snowstorm/snomed-ct/>
 
 This is the base URL, all the content calls we will perform will construct adding more values after that, including the edition and version. In this example, the edition is the International edition (MAIN) and the version is July 2019 (2019-07-31).
 
@@ -34,7 +34,7 @@ The following examples can be types into the command line of any terminal that h
 Searching for "heart attack":
 
 ```
-curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/browser/MAIN/descriptions?&limit=50&term=heart%20attack&conceptActive=true&lang=english&skipTo=0&returnLimit=100" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['totalElements'];"
+curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/browser/MAIN/descriptions?&limit=50&term=heart%20attack&conceptActive=true&lang=english&skipTo=0&returnLimit=100" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['totalElements'];"
 ```
 
 This command will obtain a json response from the server, parse it, and display the property "totalElements", this represents the number of descriptions that match with our search query.
@@ -44,7 +44,7 @@ This command will obtain a json response from the server, parse it, and display 
 Same API call, but now we display the first match FSN:
 
 ```
-curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/browser/MAIN/descriptions?&limit=50&term=heart%20attack&conceptActive=true&lang=english&skipTo=0&returnLimit=100" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['items'][0]['concept']['fsn']['term'];"
+curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/browser/MAIN/descriptions?&limit=50&term=heart%20attack&conceptActive=true&lang=english&skipTo=0&returnLimit=100" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['items'][0]['concept']['fsn']['term'];"
 ```
 
 **Output**: `Myocardial infarction (disorder)`
@@ -52,7 +52,7 @@ curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/browser/MA
 Searching for the keyword "heart", but only in the "procedure" hierarchy, this is specified in the query parameter `&semanticFilter=procedure`:
 
 ```
-curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/browser/MAIN/descriptions?&limit=50&term=heart&conceptActive=true&lang=english&skipTo=0&returnLimit=100&semanticTag=procedure" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['totalElements'];"
+curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/browser/MAIN/descriptions?&limit=50&term=heart&conceptActive=true&lang=english&skipTo=0&returnLimit=100&semanticTag=procedure" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['totalElements'];"
 ```
 
 This command will obtain a json response from the server, parse it, and display the property "totalElements", this represents the number of descriptions that match with our search query.
@@ -63,7 +63,7 @@ This command will obtain a json response from the server, parse it, and display 
 When retrieving by description id the "matches" property contains only one element, matching the provided identifier:
 
 ```
-curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/MAIN/2019-07-31/descriptions/679406011" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['term'];"
+curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/MAIN/2019-07-31/descriptions/679406011" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['term'];"
 ```
 
 **Output**: `Methylphenyltetrahydropyridine (substance)`
@@ -73,7 +73,7 @@ curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/MAIN/2019-
 The API call will retrieve the complete concept information for the provided conceptId.
 
 ```
-curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/browser/MAIN/2019-07-31/concepts/109152007" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['fsn']['term'];"
+curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/browser/MAIN/2019-07-31/concepts/109152007" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['fsn']['term'];"
 ```
 
 **Output**: `Bilirubin test kit (substance)`
@@ -83,17 +83,17 @@ curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/browser/MA
 ### Getting full concept details into a local .json file
 
 ```
-curl https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/browser/MAIN/2019-07-31/concepts/109152007 > concept.json
+curl https://browser.ihtsdotools.org/snowstorm/snomed-ct/browser/MAIN/2019-07-31/concepts/109152007 > concept.json
 ```
 
-Notice that the resource identifier "concepts" and a valid conceptId "195967001" were added to the base URL to contruct the final URL. All the examples will follow this example and the details can be consultes in the full [Snowstorm swagger API documentation](https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/).
+Notice that the resource identifier "concepts" and a valid conceptId "195967001" were added to the base URL to contruct the final URL. All the examples will follow this example and the details can be consultes in the full [Snowstorm swagger API documentation](https://browser.ihtsdotools.org/snowstorm/snomed-ct/).
 
 This command will create a concept.json file that will contain the full JSON object representing the concept.
 
 ### Show the preferred term for the concept
 
 ```
-curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/browser/MAIN/2019-07-31/concepts/195967001" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['pt']['term'];"
+curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/browser/MAIN/2019-07-31/concepts/195967001" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['pt']['term'];"
 ```
 
 **Output**: `Asthma`
@@ -103,7 +103,7 @@ curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/browser/MA
 ### Count the Inferred children of the concept
 
 ```
-curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/browser/MAIN/2019-07-31/concepts/195967001/children?form=inferred&offset=0&limit=50" | python -c "import json,sys;obj=json.load(sys.stdin);print len(obj);"
+curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/browser/MAIN/2019-07-31/concepts/195967001/children?form=inferred&offset=0&limit=50" | python -c "import json,sys;obj=json.load(sys.stdin);print len(obj);"
 ```
 
 **Output**: `25`
@@ -113,7 +113,7 @@ This concept has 25 children (direct subtypes, not descendants) in the inferred 
 ### Count the Inferred descendants of the concept
 
 ```
-curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/MAIN%2F2019-07-31/concepts/195967001/descendants?stated=false&offset=0&limit=50" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['total'];"
+curl --silent "https://browser.ihtsdotools.org/snowstorm/snomed-ct/MAIN%2F2019-07-31/concepts/195967001/descendants?stated=false&offset=0&limit=50" | python -c "import json,sys;obj=json.load(sys.stdin);print obj['total'];"
 ```
 
 **Output**: `109`

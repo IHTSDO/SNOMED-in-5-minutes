@@ -2,17 +2,17 @@
 
 
 ### Get the FSN of a given concept id
-GET https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/browser/MAIN/2019-07-31/concepts/122448007 
+GET https://browser.ihtsdotools.org/snowstorm/snomed-ct/browser/MAIN/2019-07-31/concepts/122448007 
 
 ### Gets description by give concept id
 
-GET https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/MAIN/2019-07-31/descriptions/203263010 
+GET https://browser.ihtsdotools.org/snowstorm/snomed-ct/MAIN/2019-07-31/descriptions/203263010 
 
 ### Get concepts with descriptions containing the search term
 
-GET https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/MAIN%2F2019-07-31/concepts?term=myocardial&offset=0&limit=50
+GET https://browser.ihtsdotools.org/snowstorm/snomed-ct/MAIN%2F2019-07-31/concepts?term=myocardial&offset=0&limit=50
 
 ### Get descriptions containing the search term with a specific semantic tag
 
-GET https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/browser/MAIN/descriptions?&limit=50&term=myocardial&conceptActive=true&lang=english&skipTo=0&returnLimit=100
+GET https://browser.ihtsdotools.org/snowstorm/snomed-ct/browser/MAIN/descriptions?&limit=50&term=myocardial&conceptActive=true&lang=english&skipTo=0&returnLimit=100
 

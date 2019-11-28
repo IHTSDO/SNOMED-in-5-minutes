@@ -11,7 +11,7 @@ class Snomed
     /**
      * @var string
      */
-    private $baseUrl = 'https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2/';
+    private $baseUrl = 'https://browser.ihtsdotools.org/snowstorm/snomed-ct/';
 
     /**
      * @var string

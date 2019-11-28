@@ -7,7 +7,7 @@ var myApp = angular.module('myApp', ['ui.bootstrap']).config(function($rootScope
 });
 
 // Declare top level URL vars
-var baseUrl = "https://browser.ihtsdotools.org/snowstorm/snomed-ct/v2";
+var baseUrl = "https://browser.ihtsdotools.org/snowstorm/snomed-ct";
 var edition = "MAIN";
 var version = "2019-07-31";
 
