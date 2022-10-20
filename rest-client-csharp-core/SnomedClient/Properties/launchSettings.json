@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SnomedClient": {
+      "commandName": "Project",
+      "commandLineArgs": "findByQuery \"heart attack\""
+    }
+  }
+}
