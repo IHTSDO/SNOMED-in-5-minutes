@@ -9,7 +9,7 @@ version = '2019-07-31'
 def urlopen_with_header(url):
     # adds User-Agent header otherwise urlopen on its own gets an IP blocked response
     req = Request(url)
-    req.add_header('User-Agent','Python3')
+    req.add_header('User-Agent','Python')
     return urlopen(req)
 
 #Prints fsn of a concept
