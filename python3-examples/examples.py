@@ -9,7 +9,7 @@ version = '2019-07-31'
 def urlopen_with_header(url):
     # adds User-Agent header otherwise urlopen on its own gets an IP blocked response
     req = Request(url)
-    req.add_header('User-Agent','Python3')
+    req.add_header('User-Agent','Python')
     return urlopen(req)
 
 #Prints fsn of a concept
@@ -43,8 +43,19 @@ def getDescriptionsByStringFromProcedure(searchTerm, semanticTag):
     data = json.loads(response.decode('utf-8'))
 
     print (data['totalElements'])
+    
+ #Prints snomed code for searched disease or symptom
+def getSnomedCode(searchTerm):
+    url = baseUrl + '/browser/' + edition + '/' + version + '/descriptions?term=' + quote(searchTerm) + '&conceptActive=true&groupByConcept=false&searchMode=STANDARD&offset=0&limit=50'
+    response = urlopen_with_header(url).read()
+    data = json.loads(response.decode('utf-8'))
+
+    for term in data['items']:
+      if searchTerm in term['term']:
+        print("{} : {}".format(term['term'], term['concept']['conceptId']))
 
 getConceptById('109152007')
 getDescriptionById('679406011')
 getConceptsByString('heart attack')
 getDescriptionsByStringFromProcedure('heart', 'procedure')
+getSnomedCode('Bleeding from nose')
