@@ -255,30 +255,27 @@ public class ProxyTester {
     if (type == Date.class)
       return new Date(10L + initializer);
     if (type == Boolean.class || type == boolean.class)
-      return new Boolean((initializer & 1) == 0);
+      return (initializer & 1) == 0;
     if (type == Integer.class || type == int.class)
-      return new Integer(initializer);
+      return initializer;
     if (type == Long.class || type == long.class)
-      return new Long(initializer);
+      return (long) initializer;
     if (type == Double.class || type == double.class)
-      return new Double((initializer * 1.0) / 100);
+      return (initializer * 1.0) / 100;
     if (type == Float.class || type == float.class)
-      return new Float((initializer * 1.0) / 100);
+      return (initializer * 1.0f) / 100f;
     if (type == Character.class || type == char.class)
-      return new Character((char) ('a' + initializer));
+      return (char) ('a' + initializer);
     if (type == BigDecimal.class)
       return new BigDecimal(initializer);
     if (type == Set.class) {
-      Set set = new HashSet();
-      return set;
+      return new HashSet();
     }
     if (type == List.class) {
-      List list = new ArrayList();
-      return list;
+      return new ArrayList();
     }
     if (type == Map.class) {
-      Map map = new HashMap<>();
-      return map;
+      return new HashMap<>();
     }
     if (type == BigInteger.class)
       return new BigInteger("" + initializer);
