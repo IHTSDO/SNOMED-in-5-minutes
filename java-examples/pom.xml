@@ -1,18 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <!-- Module Metadata -->
-  <parent>
-    <groupId>org.ihtsdo.tutorial</groupId>
-    <artifactId>snomed-in-5-min</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-    <relativePath>..</relativePath>
-  </parent>
+	<!-- Module Metadata -->
+	<parent>
+		<groupId>org.ihtsdo.tutorial</groupId>
+		<artifactId>snomed-in-5-min</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
 
-  <artifactId>snomed-in-5-min-java</artifactId>
-  <name>SNOMED in 5 Minutes - Java examples</name>
-  <description>SNOMED in 5 Minutes - Java examples.</description>
-  <packaging>pom</packaging>
+	<artifactId>snomed-in-5-min-java</artifactId>
+	<name>SNOMED in 5 Minutes - Java examples</name>
+	<description>SNOMED in 5 Minutes - Java examples.</description>
+	<packaging>pom</packaging>
 
 </project>
