@@ -6,7 +6,7 @@
 	<!-- Module Metadata -->
 	<groupId>org.ihtsdo.tutorial</groupId>
 	<artifactId>snomed-in-5-min</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Snomed in 5 Minutes</name>
 	<description>Tutorial to access SNOMED APIs in 5 min.</description>
