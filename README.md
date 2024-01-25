@@ -2,6 +2,13 @@
 
 This is an easy-to-use tutorial for accessing SNOMED APIs within 5 min using the SNOMED International terminology server, [Snowstorm](https://github.com/IHTSDO/snowstorm).
 
+## Consider using a FHIR API Instead!
+The examples in this repository use the Snowstorm native API and although this API is open source it is tool-specific rather than part of a standard. 
+
+If possible it's better to use a Terminology Server with a FHIR API because that is an open standard, supported by many server and client implementations in many programming langauges and libraries! Find the FHIR API of the public Snowstorm server here (for non-production use only): https://snowstorm.ihtsdotools.org/fhir
+
+[Other terminology servers are available](https://implementation.snomed.org/terminology-services). 
+
 ## Table of Contents
 
 1. [Project Structure](#project-structure)
