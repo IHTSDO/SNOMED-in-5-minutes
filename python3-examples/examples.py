@@ -12,8 +12,8 @@ edition = 'MAIN'
 version = '2019-07-31'
 
 # IMPORTANT! You must update this user agent to avoid having your IP banned for 24 hours.
-# Append a contact email so that we can contact you if your script causes excessive load on the public server
-# For example: user_agent = 'Python example@example.com'
+# Replace with a contact email so that we can contact you if your script causes excessive load on the public server
+# For example: user_agent = 'example@example.com'
 user_agent = 'Python'
 
 def urlopen_with_header(url):
