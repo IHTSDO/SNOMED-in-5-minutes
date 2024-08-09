@@ -1,3 +1,8 @@
+# This script uses the Snowstorm SNOMED-CT API. A standardised FHIR API is also available.
+
+# Note that we recommend running your own Snowstorm instance for heavy script use.
+# See https://github.com/IHTSDO/snowstorm
+
 from urllib.request import urlopen, Request
 from urllib.parse import quote
 import json
@@ -6,10 +11,15 @@ baseUrl = 'https://browser.ihtsdotools.org/snowstorm/snomed-ct'
 edition = 'MAIN'
 version = '2019-07-31'
 
+# IMPORTANT! You must update this user agent to avoid having your IP banned for 24 hours.
+# Append a contact email so that we can contact you if your script causes excessive load on the public server
+# For example: user_agent = 'Python example@example.com'
+user_agent = 'Python'
+
 def urlopen_with_header(url):
     # adds User-Agent header otherwise urlopen on its own gets an IP blocked response
     req = Request(url)
-    req.add_header('User-Agent','Python')
+    req.add_header('User-Agent', user_agent)
     return urlopen(req)
 
 #Prints fsn of a concept
